@@ -1,0 +1,40 @@
+{
+  "name": "swow-cloud/collision",
+  "description": "description",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "heping",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "coduo/php-to-string": "^3.2",
+    "swow-cloud/highlighter": "3.0.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "SwowCloud\\Collision\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "test": "phpunit --colors=always",
+    "cs-fix": "php-cs-fixer fix --config=.php_cs",
+    "stan": "phpstan analyse"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "./highlighter"
+    }
+  ],
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0.x-dev"
+    }
+  },
+  "version": "dev-master"
+}
